@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="corrales_articulosmsModelStoreContainer" CdmEntityContainer="ConexionesEntities">
+    <EntitySetMapping Name="conexiones_servidores">
+      <EntityTypeMapping TypeName="corrales_articulosmsModel.conexiones_servidores">
+        <MappingFragment StoreEntitySet="conexiones_servidores">
+          <ScalarProperty Name="id_conexion" ColumnName="id_conexion" />
+          <ScalarProperty Name="sucursal" ColumnName="sucursal" />
+          <ScalarProperty Name="base_datos" ColumnName="base_datos" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
+          <ScalarProperty Name="puerto" ColumnName="puerto" />
+          <ScalarProperty Name="servidor" ColumnName="servidor" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

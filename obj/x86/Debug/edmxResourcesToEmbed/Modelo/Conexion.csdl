@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="corrales_articulosmsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ConexionesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="conexiones_servidores" EntityType="corrales_articulosmsModel.conexiones_servidores" />
+  </EntityContainer>
+  <EntityType Name="conexiones_servidores">
+    <Key>
+      <PropertyRef Name="id_conexion" />
+    </Key>
+    <Property Name="id_conexion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sucursal" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="base_datos" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="usuario" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="contrasenia" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="puerto" Type="Int32" Nullable="false" />
+    <Property Name="servidor" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="estatus" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

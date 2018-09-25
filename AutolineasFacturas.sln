@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutolineasFacturas", "AutolineasFacturas.csproj", "{DA6B56E3-4340-4F8E-8B43-AE004EFEF1AA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AutolineasSetup", "AutolineasSetup\AutolineasSetup.vdproj", "{EF9FB83B-0C2D-4074-8C68-E1EF0E47CE12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA6B56E3-4340-4F8E-8B43-AE004EFEF1AA}.Debug|x86.ActiveCfg = Debug|x86
+		{DA6B56E3-4340-4F8E-8B43-AE004EFEF1AA}.Debug|x86.Build.0 = Debug|x86
+		{DA6B56E3-4340-4F8E-8B43-AE004EFEF1AA}.Release|x86.ActiveCfg = Release|x86
+		{DA6B56E3-4340-4F8E-8B43-AE004EFEF1AA}.Release|x86.Build.0 = Release|x86
+		{EF9FB83B-0C2D-4074-8C68-E1EF0E47CE12}.Debug|x86.ActiveCfg = Debug
+		{EF9FB83B-0C2D-4074-8C68-E1EF0E47CE12}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

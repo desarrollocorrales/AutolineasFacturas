@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="corrales_articulosmsModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="corrales_articulosmsModelStoreContainer">
+    <EntitySet Name="conexiones_servidores" EntityType="corrales_articulosmsModel.Store.conexiones_servidores" store:Type="Tables" Schema="corrales_articulosms" />
+  </EntityContainer>
+  <EntityType Name="conexiones_servidores">
+    <Key>
+      <PropertyRef Name="id_conexion" />
+    </Key>
+    <Property Name="id_conexion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sucursal" Type="varchar" MaxLength="50" />
+    <Property Name="base_datos" Type="varchar" MaxLength="100" />
+    <Property Name="usuario" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="contrasenia" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="puerto" Type="int" Nullable="false" />
+    <Property Name="servidor" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="estatus" Type="varchar" MaxLength="1" />
+  </EntityType>
+</Schema>
