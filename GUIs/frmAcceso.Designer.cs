@@ -85,7 +85,6 @@
             this.ts2.Padding = new System.Windows.Forms.Padding(0);
             this.ts2.Size = new System.Drawing.Size(74, 50);
             this.ts2.TabIndex = 65;
-            this.ts2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ts2_ItemClicked);
             // 
             // btnCerrar
             // 
@@ -111,7 +110,6 @@
             this.ts1.Padding = new System.Windows.Forms.Padding(0);
             this.ts1.Size = new System.Drawing.Size(74, 50);
             this.ts1.TabIndex = 64;
-            this.ts1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ts1_ItemClicked);
             // 
             // btnAcceder
             // 

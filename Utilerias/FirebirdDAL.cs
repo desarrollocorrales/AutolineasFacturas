@@ -197,6 +197,76 @@ FROM LIBRES_FAC_VE WHERE DOCTO_VE_ID=" + idd + ";");
             { throw x; }
         }
 
+        public LIBRES_FAC_VE obtenRemitente(conexiones_servidores csMatriz, string user, string pass, string remitente)
+        {
+            try
+            {
+                Conexion.ConnectionString = getConnectionString2(csMatriz, user, pass);
+                string Consulta =
+                    string.Format(@"SELECT DOCTO_VE_ID,RFC_REM,DOMICILIO_REM,RECOGERA from LIBRES_FAC_VE where REMITENTE='" + remitente + "';");
+
+                /* Acceso a base de datos */
+                Conexion.Open();
+                Comando.Connection = Conexion;
+                Comando.CommandText = Consulta;
+                Adapter.SelectCommand = Comando;
+
+                DataTable tablaResultado = new DataTable();
+                Adapter.Fill(tablaResultado);
+
+                LIBRES_FAC_VE obj_datos = new LIBRES_FAC_VE();
+                foreach (DataRow row in tablaResultado.Rows)
+                {
+                    obj_datos.DOCTO_VE_ID = Convert.ToInt32(row["DOCTO_VE_ID"].ToString());
+                    obj_datos.RFC_REM = row["RFC_REM"].ToString();
+                    obj_datos.DOMICILIO_REM = row["DOMICILIO_REM"].ToString();
+                    obj_datos.RECOGERA = row["RECOGERA"].ToString();
+                    
+                }
+
+                Conexion.Close();
+                /**************************/
+                return obj_datos;
+            }
+            catch (Exception x)
+            { throw x; }
+        }
+
+        public LIBRES_FAC_VE obtenDestinatario(conexiones_servidores csMatriz, string user, string pass, string desatinatario)
+        {
+            try
+            {
+                Conexion.ConnectionString = getConnectionString2(csMatriz, user, pass);
+                string Consulta =
+                    string.Format(@"SELECT DOCTO_VE_ID, RFC_DES,DOMICILIO_DES,ENTREGARA from LIBRES_FAC_VE where DESTINATARIO='" + desatinatario + "';");
+
+                /* Acceso a base de datos */
+                Conexion.Open();
+                Comando.Connection = Conexion;
+                Comando.CommandText = Consulta;
+                Adapter.SelectCommand = Comando;
+
+                DataTable tablaResultado = new DataTable();
+                Adapter.Fill(tablaResultado);
+
+                LIBRES_FAC_VE obj_datos = new LIBRES_FAC_VE();
+                foreach (DataRow row in tablaResultado.Rows)
+                {
+                    obj_datos.DOCTO_VE_ID = Convert.ToInt32(row["DOCTO_VE_ID"].ToString());
+                    obj_datos.RFC_DES = row["RFC_DES"].ToString();
+                    obj_datos.DOMICILIO_DES = row["DOMICILIO_DES"].ToString();
+                    obj_datos.ENTREGARA = row["ENTREGARA"].ToString();
+
+                }
+
+                Conexion.Close();
+                /**************************/
+                return obj_datos;
+            }
+            catch (Exception x)
+            { throw x; }
+        }
+
         public LIBRES_FAC_VE InsertaFactura(Sesion Session, LIBRES_FAC_VE obj_insert)
         {
             try

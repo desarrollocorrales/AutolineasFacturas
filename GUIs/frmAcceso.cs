@@ -99,15 +99,6 @@ namespace AutolineasFacturas.GUIs
         }
         #endregion
 
-        private void ts2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void ts1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 
         #region Metodos
         #endregion              

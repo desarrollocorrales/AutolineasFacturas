@@ -3,9 +3,9 @@ F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasF
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\bin\Debug\AutolineasFacturas.pdb
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\AutolineasFacturas.GUIs.frmAcceso.resources
+F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\AutolineasFacturas.GUIs.frmFactura.resources
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\ArticulosMicrosip.GUI_s.frmInicio.resources
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\AutolineasFacturas.Properties.Resources.resources
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\AutolineasFacturas.csproj.GenerateResource.Cache
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\AutolineasFacturas.exe
 F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\AutolineasFacturas.pdb
-F:\DESARROLLOSergioSoto\Lista Carpetas Documentos\Desarrollo_codigos\AutolineasFacturas\obj\x86\Debug\AutolineasFacturas.GUIs.frmFactura.resources

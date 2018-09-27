@@ -202,6 +202,55 @@ namespace AutolineasFacturas.GUIs
             catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
+
+        private void cmbRemitente_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbRemitente.SelectedIndex == -1 || cmbRemitente.Text == "") return;
+
+                LIBRES_FAC_VE obj_res = new LIBRES_FAC_VE();
+                obj_res = FBDatos.obtenRemitente(SessionUser.conn, SessionUser.usuario, SessionUser.pass, cmbRemitente.Text);
+
+                if (obj_res.DOCTO_VE_ID > 0)
+                {
+                    txtrfcO.Text = obj_res.RFC_REM;
+                    txtDomicilio.Text = obj_res.DOMICILIO_REM;
+                    txtRecogera.Text = obj_res.RECOGERA;
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+
+        private void cmbRemitente_LostFocus(object sender, EventArgs e)
+        {
+            cmbRemitente_SelectionChangeCommitted(null, null);
+        }
+
+        private void cmbDestinatario_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbDestinatario.SelectedIndex == -1 || cmbDestinatario.Text == "") return;
+
+                LIBRES_FAC_VE obj_res = new LIBRES_FAC_VE();
+                obj_res = FBDatos.obtenDestinatario(SessionUser.conn, SessionUser.usuario, SessionUser.pass, cmbDestinatario.Text);
+
+                if (obj_res.DOCTO_VE_ID > 0)
+                {
+                    txtrfcDes.Text = obj_res.RFC_DES;
+                    txtDomicilioDes.Text = obj_res.DOMICILIO_DES;
+                    txtEntregara.Text = obj_res.ENTREGARA;
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+
+        private void cmbDestinatario_LostFocus(object sender, EventArgs e)
+        {
+            cmbDestinatario_SelectionChangeCommitted(null, null);
+        }
+
         #endregion
 
         #region Metodos
@@ -278,7 +327,6 @@ namespace AutolineasFacturas.GUIs
             catch (Exception x)
             { throw x; }
         }
-        #endregion     
-
+        #endregion   
     }
 }

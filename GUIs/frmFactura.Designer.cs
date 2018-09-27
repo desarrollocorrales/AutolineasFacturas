@@ -383,6 +383,7 @@
             this.cmbRemitente.Name = "cmbRemitente";
             this.cmbRemitente.Size = new System.Drawing.Size(339, 23);
             this.cmbRemitente.TabIndex = 1;
+            this.cmbRemitente.SelectionChangeCommitted += new System.EventHandler(this.cmbRemitente_SelectionChangeCommitted);
             // 
             // cmbOrigen
             // 
@@ -486,6 +487,7 @@
             this.cmbDestinatario.Name = "cmbDestinatario";
             this.cmbDestinatario.Size = new System.Drawing.Size(339, 23);
             this.cmbDestinatario.TabIndex = 1;
+            this.cmbDestinatario.SelectionChangeCommitted += new System.EventHandler(this.cmbDestinatario_SelectionChangeCommitted);
             // 
             // txtDomicilioDes
             // 
